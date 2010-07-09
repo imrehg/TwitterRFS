@@ -1,0 +1,24 @@
+* Improvements
+** Mount options for login
+   Log into a twitter account so could see follower/following/private tweets, etc...
+** Subdirectories:
+   + Followers/Following: symlink to /<username> to see their tweets
+   + user's lists
+   + public timeline
+   + trending topics
+** RW system to tweet
+   RouteFS is read-only at the moment, so cannot implement. Also, the permission check could be tricky.
+** Refresh
+   Re-check things after a time, so one don't have to log-off to see new tweets
+** Timestamp update
+   Probably python-routefs issue, there they set the timestamp to "0". Need to figure out whether it can be accessed from my code without modifying routefs.
+** Tweet-text enhanced
+   Not sure if it is a good/bad idea, maybe can be mount option. Include
+   + location: python-twitter might need an update for that one
+   + time
+   + in reply to
+   + posted via
+* Bugs
+** Unicode support
+   At the moment neither python-routefs nor python-fuse support unicode text.
+   Though python-routefs can be easily fixed, no point in doin it until fuse supports it. That one is trickier and involves some C wizardry
