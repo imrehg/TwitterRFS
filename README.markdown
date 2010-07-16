@@ -1,6 +1,6 @@
 
 
-As an excercise after reading a blogpost [Building Filesystems the Way You Build Web Apps](Building Filesystems the Way You Build Web Apps), Twitter-RouteFS (or TwitterRFS) is a simple, readonly filesystem to get tweets quickly in the filesystem and be able to interact with them in other programs that might not know how to access Twitter.
+As an excercise after reading a blogpost [Building Filesystems the Way You Build Web Apps](http://blog.ksplice.com/2010/07/building-filesystems-the-way-you-build-web-apps/), Twitter-RouteFS (or TwitterRFS) is a simple, readonly filesystem to get tweets quickly in the filesystem and be able to interact with them in other programs that might not know how to access Twitter.
 
 ## Requirements
 [python-fuse](http://pypi.python.org/pypi/fuse-python/0.2)
